@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: webdesign-wordpress
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: DB_NAME
+        value: bank
+      - key: DB_USER
+        value: wordpress
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: WP_HOME
+        sync: false
+      - key: WP_SITEURL
+        sync: false
