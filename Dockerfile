@@ -4,8 +4,11 @@ RUN sed -ri 's/Listen 80/Listen 10000/g; s/<VirtualHost \*:80>/<VirtualHost *:10
 
 ENV APACHE_LISTEN_PORT=10000
 
-COPY . /var/www/html/
-
-RUN chown -R www-data:www-data /var/www/html
+COPY wp-config.php /usr/src/wordpress/wp-config.php
+COPY wp-content/ /usr/src/wordpress/wp-content/
+COPY .htaccess /usr/src/wordpress/.htaccess
 
 EXPOSE 10000
+
+
+
