@@ -1,7 +1,0 @@
-.env
-.env.*
-!.env.example
-*.sql
-*.zip
-.DS_Store
-Thumbs.db
