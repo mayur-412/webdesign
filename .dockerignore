@@ -1,0 +1,17 @@
+# Git
+.git
+.gitignore
+.github
+
+# Local/editor files
+.vscode
+.idea
+*.log
+.DS_Store
+Thumbs.db
+
+# Local development
+node_modules
+vendor
+.env
+.env.*
